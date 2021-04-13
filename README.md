@@ -2,7 +2,7 @@
 
 ## Description:
 
-We collected 1,800 Press releases from police from Jenuary 2019 to April 2021 and used them to estimate the crime rate between different areas in Greece. We used a model for Named Entity Recognition and finally we 
+We collected 1,800 Press Releases from police from Jenuary 2019 to April 2021 and used them to estimate the crime rate between different areas in Greece. We used a model for Named Entity Recognition and finally we 
 applied data visualization on map with heatmap. 
 
 Getting Started
@@ -14,10 +14,22 @@ Data and code were applied on Colab Notebook.
 
 spacy, spacy download en_core_web_sm, geopandas, geopy, spacy.cli.download("el_core_news_sm")
 
-The modules need to be imported are:
+### The modules need to be imported are:
 
 drive, json, spacy, spacy.cli, defaultdict, pandas, plotly.express, geopandas, geopy, Nominatim
 
+## DATA:
+
+Data are json formatted. The Releases are technically a list of lists grouped by date like the following example:
+[
+	['Jenuary 2019',
+		[{'title':'A crime was commited today in Athens' subway',
+		  'report': 'Some information about the crime in here'},
+		  {'title':'A crime was commited today in Athens' subway',
+		  'report': 'Some information about the crime in here'}
+		],
+	]
+]
 
 
 Give examples
