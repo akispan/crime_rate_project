@@ -10,7 +10,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ## Prerequisites:
 Data and code were applied on Colab Notebook. 
-The modules need to be installed are:
+### The modules need to be installed are:
 
 spacy, spacy download en_core_web_sm, geopandas, geopy, spacy.cli.download("el_core_news_sm")
 
